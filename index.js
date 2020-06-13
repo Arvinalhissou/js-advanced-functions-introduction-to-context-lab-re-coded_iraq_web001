@@ -51,8 +51,8 @@ function allWagesFor (empObj){
 }
 
 
-let findEmployeeByFirstName = (scrArray,firstname)=>{
-  scrArray.find(emp => emp.firstName === firstname)
+let findEmployeeByFirstName = (scrArray,firstName)=>{
+   return srcArray.find(function(object) {return object.firstName === firstName})
 }
 
 let calculatePayroll = function(empArray){
