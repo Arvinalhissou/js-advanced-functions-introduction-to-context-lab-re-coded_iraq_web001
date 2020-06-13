@@ -46,13 +46,13 @@ function wagesEarnedOnDate (empObj, dateForm){
 }
 
 function allWagesFor (empObj){
-    return empObj.timeInEvents.reduce((a,b)=>{ a + wagesEarnedOnDate(empObj, b.date)
-    },0)
+    return empObj.timeInEvents.reduce((a,b)=> a + wagesEarnedOnDate(empObj, b.date)
+    ,0)
 }
 
 
 let findEmployeeByFirstName = (scrArray,firstname)=>{
-  scrArray.find(name=>name.firstName === firstname)
+  scrArray.find(name.firstName === firstname)
 }
 
 let calculatePayroll = function(empArray){
