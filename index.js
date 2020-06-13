@@ -52,7 +52,7 @@ function allWagesFor (empObj){
 
 
 let findEmployeeByFirstName = (scrArray,firstname)=>{
-  scrArray.find(name.firstName === firstname)
+  scrArray.find(name=>name.firstName === firstname)
 }
 
 let calculatePayroll = function(empArray){
